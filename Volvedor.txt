@@ -1,0 +1,25 @@
+VOLVEDOR by Franco Simone
+
+Volvedor es un juego de carrera contra el reloj con obstaculos, en la que un jugador intenta manejar 2 personajes al mismo tiempo, ya que si se alejan demasiado el uno del otro, es game over.
+
+MECANICAS:
+
+- Los PJ tienen una luz que les indica la cercania con el otro, y deben usarla para ubicar los obstaculos
+- El jugador posee una habilidad especial que ilumina el mapa por tiempo limitado pero tiene 10 segundos de enfriamiento
+- Las paredes y los obstaculos hacen rebotar a los PJ, y el piso tiene poca friccion.
+
+CONTROLES:
+
+- WASD para moverse
+- TAB para cambiar de PJ
+- E para usar el Flash
+
+A IMPLEMENTAR EN UN FUTURO:
+
+- Salto
+- Reloj en pantalla
+- Indicador de direccion hacia el otro PJ
+- Mas niveles con otro tipo de obstaculos (zonas que te relentizan/aceleran, agujeros en donde podes caer, obstaculos que se mueven)
+
+
+
