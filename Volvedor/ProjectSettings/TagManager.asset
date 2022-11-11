@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Cameras
+  - Limits
   layers:
   - Default
   - TransparentFX
