@@ -6,6 +6,7 @@ public class ColorSelect2 : MonoBehaviour
 {
     public Light colorControl2;
     public Color[] color = new Color[4];
+    public bool activePlayer = false;
      
     private void Awake() 
     {
@@ -13,7 +14,7 @@ public class ColorSelect2 : MonoBehaviour
         color[0] = Color.blue;
         color[1] = Color.red;
         color[2] = Color.yellow;
-        color[3] = Color.green;
+        color[3] = Color.magenta;
         
     }    
 
@@ -24,39 +25,86 @@ public class ColorSelect2 : MonoBehaviour
        
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.M))
+        
+        PlayerSwitch();
+
+        if(activePlayer == true)
         {
-            ChangeP1Color();
+            if(Input.GetKeyDown(KeyCode.Q))
+            {
+                ChangeP2ColorUp();
+            }
+
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                ChangeP2ColorDown();
+            }
         }
               
     }
    
-    void ChangeP1Color()
+    void PlayerSwitch()
+    {
+        if(Input.GetKeyDown(KeyCode.Tab) && activePlayer == true)
+        {
+            activePlayer = false;
+        }
+        
+        else if(Input.GetKeyDown(KeyCode.Tab) && activePlayer == false) 
+        {
+            activePlayer = true;
+        }
+
+    }
+    
+    void ChangeP2ColorUp()
     {
         Debug.Log(colorControl2.color);
         
         if(colorControl2.color == color[0])
         {
-            colorControl2.color = color[1];
-            Debug.Log("ROJO");
+            colorControl2.color = color[1];            
         }
 
         else if(colorControl2.color == color[1])
         {
             colorControl2.color = color[2];
-            Debug.Log("AMARILLO");
         }
 
         else if(colorControl2.color == color[2])
         {
-            colorControl2.color = color[3];
-            Debug.Log("VERDE");
+            colorControl2.color = color[3];  
         }
 
         else if(colorControl2.color == color[3])
         {
             colorControl2.color = color[0];
-            Debug.Log("AZUL");
+        }
+
+    }
+
+    void ChangeP2ColorDown()
+    {
+        Debug.Log(colorControl2.color);
+        
+        if(colorControl2.color == color[0])
+        {
+            colorControl2.color = color[3];
+        }
+
+        else if(colorControl2.color == color[1])
+        {
+            colorControl2.color = color[0];
+        }
+
+        else if(colorControl2.color == color[2])
+        {
+            colorControl2.color = color[1];
+        }
+
+        else if(colorControl2.color == color[3])
+        {
+            colorControl2.color = color[2];
         }
 
     }
