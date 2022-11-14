@@ -21,7 +21,6 @@ public class SwitchPlayer : MonoBehaviour
     void FixedUpdate() 
     {
         PlayerMovement();
-        PlayerJump();
     }
 
     void PlayerSwitch()
@@ -48,19 +47,7 @@ public class SwitchPlayer : MonoBehaviour
             rb.AddForce(new Vector3(0,0,vMov), ForceMode.Impulse);
         }
     }
-
-    void PlayerJump()
-    {
-        if(activePlayer == true)
-        {
-        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y < 0.6f )
-            {
-                rb.AddForce(new Vector3 (0,speed / 4,0), ForceMode.Impulse);
-            }
-        }
-    }
-
-
+  
     void SpeedCalculator()
     {
         speed = 36f - check.distance / 2f;

@@ -5,8 +5,8 @@ public class LightControl : MonoBehaviour
 {
     public GameObject[] lights;
     bool isActive = true;
-    public float cooldown = 0;
-    public float duration = 0.5f;
+    float cooldown = 0;
+    float duration = 1.5f;
 
    void Update() 
    {
@@ -18,7 +18,7 @@ public class LightControl : MonoBehaviour
 
     void SwitchLights()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isActive == true && cooldown <= 0) 
+        if (Input.GetKeyDown(KeyCode.Space) && isActive == true && cooldown <= 0) 
         {
             lights[0].SetActive(false);
             isActive = false;
@@ -26,7 +26,7 @@ public class LightControl : MonoBehaviour
             Debug.Log("Light 1");
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && cooldown >= 0) 
+        if (Input.GetKeyDown(KeyCode.Space) && cooldown >= 0) 
         {
             Debug.Log("FLASH COOLDOWN: " + cooldown);
         }
@@ -44,7 +44,7 @@ public class LightControl : MonoBehaviour
                 lights[0].SetActive(true);
                 isActive = true;
                 lights[1].SetActive(false);
-                duration = 1;
+                duration = 1.5f;
             }
         }
     }
