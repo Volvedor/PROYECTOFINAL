@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 82eb2588ddbfaa740b077f0b578d1ac7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Pixel Digivolve
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3b01e21b9d22b3f49a8a3213e030f930, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

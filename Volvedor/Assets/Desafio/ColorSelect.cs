@@ -13,7 +13,7 @@ public class ColorSelect : MonoBehaviour
         color[0] = Color.blue;
         color[1] = Color.red;
         color[2] = Color.yellow;
-        color[3] = Color.green;
+        color[3] = Color.magenta;
         
     }    
 
@@ -44,25 +44,21 @@ public class ColorSelect : MonoBehaviour
         if(colorControl.color == color[0])
         {
             colorControl.color = color[1];
-            Debug.Log("ROJO");
         }
 
         else if(colorControl.color == color[1])
         {
             colorControl.color = color[2];
-            Debug.Log("AMARILLO");
         }
 
         else if(colorControl.color == color[2])
         {
             colorControl.color = color[3];
-            Debug.Log("VERDE");
         }
 
         else if(colorControl.color == color[3])
         {
             colorControl.color = color[0];
-            Debug.Log("AZUL");
         }
 
     }
@@ -74,26 +70,22 @@ public class ColorSelect : MonoBehaviour
         if(colorControl.color == color[0])
         {
             colorControl.color = color[3];
-            Debug.Log("VERDE");
         }
 
         else if(colorControl.color == color[1])
         {
             colorControl.color = color[0];
-            Debug.Log("AZUL");
         }
 
         else if(colorControl.color == color[2])
         {
             colorControl.color = color[1];
-            Debug.Log("ROJO");
         }
 
         else if(colorControl.color == color[3])
         {
             colorControl.color = color[2];
-            Debug.Log("AMARILLO");
-        }
+         }
 
     }
     
