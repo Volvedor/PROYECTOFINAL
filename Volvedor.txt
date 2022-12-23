@@ -12,14 +12,16 @@ CONTROLES:
 
 - WASD para moverse
 - TAB para cambiar de PJ
-- E para usar el Flash
+- Space para usar el Flash
 
 A IMPLEMENTAR EN UN FUTURO:
 
 - Salto
-- Reloj en pantalla
 - Indicador de direccion hacia el otro PJ
-- Mas niveles con otro tipo de obstaculos (zonas que te relentizan/aceleran, agujeros en donde podes caer, obstaculos que se mueven)
+- Mas niveles con otro tipo de obstaculos
+- Efectos de particulas
+- 
+
 
 
 
