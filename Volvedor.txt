@@ -20,7 +20,6 @@ A IMPLEMENTAR EN UN FUTURO:
 - Indicador de direccion hacia el otro PJ
 - Mas niveles con otro tipo de obstaculos
 - Efectos de particulas
-- 
 
 
 
