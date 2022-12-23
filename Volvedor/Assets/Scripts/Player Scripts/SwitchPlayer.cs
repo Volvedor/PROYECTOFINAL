@@ -50,6 +50,6 @@ public class SwitchPlayer : MonoBehaviour
   
     void SpeedCalculator()
     {
-        speed = 36f - check.distance / 2f;
+        speed = 45f - check.distance / 2f;
     }
 }
